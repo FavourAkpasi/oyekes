@@ -14,7 +14,7 @@ function SideNav({ openSideNav, setOpenSideNav }: SideNavProps) {
           <a href="/soon">HAIR</a>
         </li>
         <li onClick={() => setOpenSideNav(!openSideNav)}>
-          <a href="/">FABRICS</a>
+          <a href="/fabrics">FABRICS</a>
         </li>
         <li onClick={() => setOpenSideNav(!openSideNav)}>
           <a href="/collections">FEATURED</a>
@@ -32,9 +32,11 @@ function SideNav({ openSideNav, setOpenSideNav }: SideNavProps) {
           <a href="/soon">BOOK A SESSION</a>
         </li>
       </ul>
-      <button id="close_btn" onClick={() => setOpenSideNav(!openSideNav)}>
-        <CloseIcon />
-      </button>
+      {openSideNav && (
+        <button id="close_btn" onClick={() => setOpenSideNav(!openSideNav)}>
+          <CloseIcon />
+        </button>
+      )}
     </div>
   );
 }

@@ -10,13 +10,16 @@ const MobileHeader = () => {
 
   const [openSideNav, setOpenSideNav] = useState(false);
   return (
-    <header className="header-container" id="header">
-      <div className="header-wrapper">
+    <header className="header-container " id="header">
+      <div className="header-wrapper mobile-header">
         <div className="header-left">
-          <MenuIcon
-            id="menu_bar"
-            onClick={() => setOpenSideNav(!openSideNav)}
-          />
+          {!openSideNav && (
+            <MenuIcon
+              id="menu_bar"
+              onClick={() => setOpenSideNav(!openSideNav)}
+            />
+          )}
+
           <SideNav openSideNav={openSideNav} setOpenSideNav={setOpenSideNav} />
         </div>
         <div

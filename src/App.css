@@ -5,6 +5,14 @@
   font-family: "Urbanist", sans-serif;
   text-decoration: none;
   transition: 0.3s ease;
+  scroll-behavior: smooth;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* hover */

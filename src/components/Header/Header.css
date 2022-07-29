@@ -62,3 +62,16 @@
 .search-box:focus-within {
   border: 0.15rem solid lightgray;
 }
+
+/* mobile */
+
+.mobile-header > .header-left {
+  justify-content: flex-start;
+}
+
+.mobile-header > .header-right {
+  justify-content: flex-end;
+}
+.mobile-header > .header-right svg {
+  margin: 0;
+}
