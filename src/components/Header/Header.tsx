@@ -5,9 +5,9 @@ import LargeHeader from "./LargeHeader";
 
 const Header = () => {
   const header = document.getElementById("header") as HTMLElement | null;
-  var prevScrollpos = window.pageYOffset;
+  let prevScrollpos = window.pageYOffset;
   window.onscroll = function () {
-    var currentScrollPos = window.pageYOffset;
+    let currentScrollPos = window.pageYOffset;
     if (header != null) {
       if (prevScrollpos > currentScrollPos) {
         header.style.top = "0";

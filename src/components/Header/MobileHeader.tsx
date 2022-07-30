@@ -7,21 +7,6 @@ import { useNavigate } from "react-router-dom";
 
 const MobileHeader = () => {
   const navigate = useNavigate();
-
-  const header = document.getElementById("header") as HTMLElement | null;
-  var prevScrollpos = window.pageYOffset;
-  window.onscroll = function () {
-    var currentScrollPos = window.pageYOffset;
-    if (header != null) {
-      if (prevScrollpos > currentScrollPos) {
-        header.style.top = "0";
-      } else {
-        header.style.top = "-5rem";
-      }
-      prevScrollpos = currentScrollPos;
-    }
-  };
-
   const [viewportWidth, setviewPortWidth] = useState(window.innerWidth);
 
   useEffect(() => {
