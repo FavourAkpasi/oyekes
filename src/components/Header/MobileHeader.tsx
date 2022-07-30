@@ -6,6 +6,22 @@ import SideNav from "../SideNav/SideNav";
 import { useNavigate } from "react-router-dom";
 
 const MobileHeader = () => {
+  useEffect(() => {
+    const header = document.getElementById("header") as HTMLElement | null;
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+      var currentScrollPos = window.pageYOffset;
+      if (header != null) {
+        if (prevScrollpos > currentScrollPos) {
+          header.style.top = "0";
+        } else {
+          header.style.top = "-5rem";
+        }
+        prevScrollpos = currentScrollPos;
+      }
+    };
+  }, [window.onscroll]);
+
   const navigate = useNavigate();
   const [viewportWidth, setviewPortWidth] = useState(window.innerWidth);
 

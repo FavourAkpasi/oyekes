@@ -6,8 +6,25 @@ import FaceIcon from "@mui/icons-material/Face";
 import LocalMallRoundedIcon from "@mui/icons-material/LocalMallRounded";
 import FavoriteRoundedIcon from "@mui/icons-material/FavoriteRounded";
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 const LargeHeader = () => {
+  useEffect(() => {
+    const header = document.getElementById("header") as HTMLElement | null;
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+      var currentScrollPos = window.pageYOffset;
+      if (header != null) {
+        if (prevScrollpos > currentScrollPos) {
+          header.style.top = "0";
+        } else {
+          header.style.top = "-5rem";
+        }
+        prevScrollpos = currentScrollPos;
+      }
+    };
+  }, [window.onscroll]);
+
   const navigate = useNavigate();
   return (
     <header className="header-container" id="header">
