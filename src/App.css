@@ -4,7 +4,6 @@
   box-sizing: border-box;
   font-family: "Urbanist", sans-serif;
   text-decoration: none;
-  transition: 0.3s ease;
   scroll-behavior: smooth;
 }
 li {

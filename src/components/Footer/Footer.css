@@ -52,4 +52,9 @@
   .footer-item {
     padding: 0.5rem 0;
   }
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    padding: 1rem;
+  }
 }

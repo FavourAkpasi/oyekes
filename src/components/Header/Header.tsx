@@ -1,12 +1,9 @@
 import "./Header.css";
 import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
 import MobileHeader from "./MobileHeader";
 import LargeHeader from "./LargeHeader";
 
 const Header = () => {
-  const navigate = useNavigate();
-
   const header = document.getElementById("header") as HTMLElement | null;
   var prevScrollpos = window.pageYOffset;
   window.onscroll = function () {

@@ -119,6 +119,7 @@ const Button = styled.button`
   font-size: 1.5rem;
   border-radius: 0.5rem;
   background-color: hotpink;
+  color: black;
   cursor: pointer;
   border: none;
   &:hover {
@@ -152,7 +153,7 @@ const MobileSlider = () => {
         setSlideindex((prevIndex: number) =>
           prevIndex === sliderData.length - 1 ? 0 : prevIndex + 1
         ),
-      3000
+      2500
     );
 
     return () => {

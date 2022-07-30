@@ -31,6 +31,9 @@
     font-size: smaller;
     margin-top: 5rem;
   }
+  .navbar2-item {
+    justify-content: center;
+  }
   .hide {
     display: none;
   }

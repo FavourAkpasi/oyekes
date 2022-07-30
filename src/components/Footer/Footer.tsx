@@ -19,20 +19,7 @@ function Footer() {
           </p>
         </div>
       </div>
-      <div className="footer-center link">
-        <div className="footer-center-title">
-          <h4>©2022 OYEKES</h4>
-        </div>
-        <div className="footer-center-items">
-          <p>Work with Us </p>
-          <p>Invest in Our Dream</p>
-          <p>Privacy & Cookies</p>
-          <p>Ts&Cs</p>
-          <p>Accessability</p>
-          <p>My Account</p>
-          <p>FAQs</p>
-        </div>
-      </div>
+
       <div className="footer-right link">
         <div className="footer-right-items">
           <p>
@@ -49,6 +36,20 @@ function Footer() {
           <p>
             <MailOutline /> contact@oyekes.com
           </p>
+        </div>
+      </div>
+      <div className="footer-center link">
+        <div className="footer-center-items">
+          <p>Work with Us </p>
+          <p>Invest in Our Dream</p>
+          <p>Privacy & Cookies</p>
+          <p>Ts&Cs</p>
+          <p>Accessability</p>
+          <p>My Account</p>
+          <p>FAQs</p>
+        </div>
+        <div className="footer-center-title">
+          <h4>©2022 OYEKES</h4>
         </div>
       </div>
     </div>
