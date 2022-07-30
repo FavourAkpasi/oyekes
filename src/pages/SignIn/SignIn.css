@@ -1,0 +1,69 @@
+.auth {
+  text-align: center;
+  background-color: #eee;
+  width: 100vw;
+  padding: 3rem 0;
+}
+
+.auth-container {
+  width: 50%;
+  margin: 1rem auto;
+  background-color: #fff;
+  padding: 1rem 2rem;
+}
+
+.auth-container-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.auth-option {
+  flex: 1;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-bottom: 0.15rem solid #eee;
+  font-weight: bold;
+  color: #999;
+}
+
+.auth-option span {
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+}
+
+.login {
+  color: #222;
+  border-bottom: 0.15rem solid hotpink;
+}
+
+.vertical-line {
+  border-left: 0.15rem solid #eee;
+  height: 1.5rem;
+}
+
+.auth form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+.forgot-password {
+  color: #777;
+}
+.other-option {
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .auth-container {
+    width: 80%;
+    padding: 1rem;
+  }
+}
