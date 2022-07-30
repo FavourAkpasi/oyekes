@@ -1,8 +1,8 @@
 import "./App.css";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Home from "./pages/Home/Home";
-import SignIn from "./pages/SignIn/Signin";
 import SignUp from "./pages/SignUp/SignUp";
+// import SignIn from "./pages/SignIn/SignIn";
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
       <Route path="straighthair" element={<StraightHair />} />
       <Route path="braidedhair" element={<BraidedHair />} />
       <Route path="productDetails" element={<ProductDetails />} /> */}
-        <Route path="signin" element={<SignIn />} />
+        {/* <Route path="signin" element={<SignIn />} /> */}
         <Route path="signup" element={<SignUp />} />
       </Routes>
     </BrowserRouter>

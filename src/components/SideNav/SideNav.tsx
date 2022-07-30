@@ -20,7 +20,7 @@ function SideNav({ openSideNav, setOpenSideNav }: SideNavProps) {
           <a href="/collections">FEATURED</a>
         </li>
         <li onClick={() => setOpenSideNav(!openSideNav)}>
-          <a href="/soon">ACCOUNT</a>
+          <a href="/signup">ACCOUNT</a>
         </li>
         <li onClick={() => setOpenSideNav(!openSideNav)}>
           <a href="/soon">ABOUT US</a>
