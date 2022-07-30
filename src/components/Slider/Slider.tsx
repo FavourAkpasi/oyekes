@@ -1,11 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
 import MobileSlider from "./MobileSlider";
 import LargeSlider from "./LargeSlider";
 
 const Slider = () => {
-  const navigate = useNavigate();
-
   const header = document.getElementById("header") as HTMLElement | null;
   var prevScrollpos = window.pageYOffset;
   window.onscroll = function () {

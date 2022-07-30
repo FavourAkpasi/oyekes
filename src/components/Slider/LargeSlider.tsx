@@ -1,10 +1,15 @@
 import { ArrowLeftOutlined, ArrowRightOutlined } from "@mui/icons-material";
-import styled from "styled-components";
+import styled, { StyledComponent } from "styled-components";
 import { useNavigate } from "react-router-dom";
 // import { sliderData } from "../../Data.js";
 import { useEffect, useState } from "react";
 import React from "react";
 import "./Slider.css";
+
+interface PropType {
+  side: string;
+  slideIndex: number;
+}
 
 const sliderData = [
   {
@@ -45,7 +50,7 @@ const Container = styled.div`
   overflow: hidden;
 `;
 
-const Arrow = styled.div`
+const Arrow = styled.div<PropType>`
   width: 3rem;
   height: 3rem;
   background-color: white;
@@ -56,18 +61,18 @@ const Arrow = styled.div`
   position: absolute;
   top: 0;
   bottom: 0;
-  left: ${(props: string | any) => props.side === "left" && "1rem"};
-  right: ${(props: string | any) => props.side === "right" && "1rem"};
+  left: ${(props) => props.side === "left" && "1rem"};
+  right: ${(props) => props.side === "right" && "1rem"};
   margin: auto;
   cursor: pointer;
   opacity: 0.5;
   z-index: 1;
 `;
 
-const Wrapper = styled.div`
+const Wrapper = styled.div<PropType>`
   height: 100%;
   display: flex;
-  transform: translateX(${(props: number | any) => props.slideIndex * -100}vw);
+  transform: translateX(${(props) => props.slideIndex * -100}vw);
   transition: all 1.5s ease;
 `;
 
@@ -152,10 +157,10 @@ const LargeSlider = () => {
 
   return (
     <Container>
-      <Arrow side="left" onClick={() => handleClick("left")}>
+      <Arrow<null | any> side="left" onClick={() => handleClick("left")}>
         <ArrowLeftOutlined />
       </Arrow>
-      <Wrapper slideIndex={slideIndex}>
+      <Wrapper<null | any> slideIndex={slideIndex}>
         {sliderData.map(
           (slide: {
             id: number;
@@ -180,7 +185,7 @@ const LargeSlider = () => {
           )
         )}
       </Wrapper>
-      <Arrow side="right" onClick={() => handleClick("right")}>
+      <Arrow<null | any> side="right" onClick={() => handleClick("right")}>
         <ArrowRightOutlined />
       </Arrow>
     </Container>
