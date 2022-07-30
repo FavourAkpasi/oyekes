@@ -1,0 +1,38 @@
+.servicebar-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 0;
+}
+.servicebar-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  cursor: pointer;
+}
+.servicebar-item img {
+  width: 20%;
+}
+.servicebar-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.servicebar-text h3,
+.servicebar-text p {
+  font-size: larger;
+  color: #444;
+}
+@media only screen and (max-width: 600px) {
+  .servicebar-container {
+    padding: 0.5rem;
+    flex-direction: column;
+    font-size: smaller;
+  }
+  .servicebar-item {
+    padding: 0.5rem 0;
+  }
+}

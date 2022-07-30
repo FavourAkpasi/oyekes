@@ -1,0 +1,28 @@
+.nav-container {
+  height: 3rem;
+  background-color: #555;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+.nav-item {
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  color: #f2f2f2;
+  cursor: pointer;
+  font-size: clamp(0.5rem, 1rem, 1.5);
+}
+.nav-item:hover {
+  color: #555;
+  background-color: #f2f2f2;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-container {
+    display: none;
+  }
+}
