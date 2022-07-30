@@ -20,7 +20,7 @@ const MobileHeader = () => {
         prevScrollpos = currentScrollPos;
       }
     };
-  }, [window.onscroll]);
+  }, []);
 
   const navigate = useNavigate();
   const [viewportWidth, setviewPortWidth] = useState(window.innerWidth);

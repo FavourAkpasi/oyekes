@@ -78,7 +78,7 @@ const Wrapper = styled.div<PropType>`
   height: 100%;
   display: flex;
   transform: translateX(${(props) => props.slideIndex * -100}vw);
-  transition: 0.5s ease;
+  transition: all 1.5s ease;
 `;
 
 const Slide = styled.div`
@@ -134,9 +134,9 @@ const MobileSlider = () => {
   const [slideIndex, setSlideindex] = useState<number | any>(0);
   const handleClick = (direction: string | any) => {
     if (direction === "left") {
-      setSlideindex(slideIndex > 0 ? slideIndex - 1 : sliderData.length - 1);
+      setSlideindex(slideIndex > 0 ? slideIndex - 1 : 4);
     } else {
-      setSlideindex(slideIndex < sliderData.length - 1 ? slideIndex + 1 : 0);
+      setSlideindex(slideIndex < 4 ? slideIndex + 1 : 0);
     }
   };
 
