@@ -48,7 +48,7 @@ const LargeHeader = () => {
         </div>
         <div className="header-right">
           <Badge>
-            <FaceIcon cursor="pointer" onClick={() => navigate("/login")} />
+            <FaceIcon cursor="pointer" onClick={() => navigate("/signin")} />
           </Badge>
           <Badge color="error" badgeContent={1}>
             <FavoriteRoundedIcon cursor="pointer" />
