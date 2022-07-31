@@ -2,13 +2,14 @@ import React from "react";
 import Announcement from "../../components/Announcement/Announcement";
 import BottomNav from "../../components/BottomNav/BottomNav";
 import Footer from "../../components/Footer/Footer";
+import HairCategories from "../../components/HairCategories/HairCategories";
 import Header from "../../components/Header/Header";
 import Navbar from "../../components/Navbar/Navbar";
 import Servicebar from "../../components/Servicebar/Servicebar";
 import Slider from "../../components/Slider/Slider";
 import Socials from "../../components/Socials/Socials";
 
-const Home = () => {
+const Hair = () => {
   return (
     <>
       <Header />
@@ -16,6 +17,7 @@ const Home = () => {
       <BottomNav />
       <Announcement />
       <Slider />
+      <HairCategories />
       <Servicebar />
       <Socials />
       <Footer />
@@ -23,4 +25,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Hair;

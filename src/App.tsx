@@ -3,15 +3,17 @@ import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import SignUp from "./pages/SignUp/SignUp";
 import SignIn from "./pages/SignIn/SignIn";
+import Hair from "./pages/Hair/Hair";
+import Fabrics from "./pages/Fabrics/Fabrics";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="hair" element={<Hair />} />
-      <Route path="fabrics" element={<Fabrics />} />
-      <Route path="hairproducts" element={<HairProducts />} />
+        <Route path="hair" element={<Hair />} />
+        <Route path="fabrics" element={<Fabrics />} />
+        {/* <Route path="hairproducts" element={<HairProducts />} />
       <Route path="fabricproducts" element={<FabricsProducts />} />
       <Route path="straighthair" element={<StraightHair />} />
       <Route path="braidedhair" element={<BraidedHair />} />

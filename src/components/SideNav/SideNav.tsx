@@ -11,7 +11,7 @@ function SideNav({ openSideNav, setOpenSideNav }: SideNavProps) {
     <div className="side_nav" style={{ width: `${openSideNav ? "60%" : "0"}` }}>
       <ul>
         <li onClick={() => setOpenSideNav(!openSideNav)}>
-          <a href="/soon">HAIR</a>
+          <a href="/hair">HAIR</a>
         </li>
         <li onClick={() => setOpenSideNav(!openSideNav)}>
           <a href="/fabrics">FABRICS</a>

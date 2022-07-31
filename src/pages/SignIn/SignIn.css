@@ -63,7 +63,7 @@
 
 @media only screen and (max-width: 600px) {
   .auth-container {
-    width: 80%;
+    width: 100%;
     padding: 1rem;
   }
 }
