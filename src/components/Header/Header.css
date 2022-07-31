@@ -49,6 +49,10 @@
   color: #333;
   cursor: pointer;
 }
+
+.header-left .active {
+  border-bottom: 0.15rem solid hotpink;
+}
 .header-container .search-box {
   display: flex;
   align-items: center;

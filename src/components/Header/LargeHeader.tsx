@@ -5,7 +5,7 @@ import Badge from "@mui/material/Badge";
 import FaceIcon from "@mui/icons-material/Face";
 import LocalMallRoundedIcon from "@mui/icons-material/LocalMallRounded";
 import FavoriteRoundedIcon from "@mui/icons-material/FavoriteRounded";
-import { useNavigate } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 
 const LargeHeader = () => {
@@ -33,12 +33,12 @@ const LargeHeader = () => {
           <div className="logo" onClick={() => navigate("/")}>
             OYEKES
           </div>
-          <div className="header-text" onClick={() => navigate("/hair")}>
+          <NavLink className="header-text hhh" to="/hair">
             HAIR
-          </div>
-          <div className="header-text" onClick={() => navigate("/fabrics")}>
+          </NavLink>
+          <NavLink className="header-text" to="/fabrics">
             FABRICS
-          </div>
+          </NavLink>
         </div>
         <div className="header-center">
           <div className="search-box">
@@ -47,9 +47,11 @@ const LargeHeader = () => {
           </div>
         </div>
         <div className="header-right">
-          <Badge>
-            <FaceIcon cursor="pointer" onClick={() => navigate("/signin")} />
-          </Badge>
+          <Link to="/signin">
+            <Badge>
+              <FaceIcon cursor="pointer" />
+            </Badge>
+          </Link>
           <Badge color="error" badgeContent={1}>
             <FavoriteRoundedIcon cursor="pointer" />
           </Badge>

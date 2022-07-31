@@ -1,5 +1,6 @@
 import "./SideNav.css";
 import CloseIcon from "@mui/icons-material/Close";
+import { Link } from "react-router-dom";
 
 type SideNavProps = {
   openSideNav: boolean;
@@ -11,25 +12,25 @@ function SideNav({ openSideNav, setOpenSideNav }: SideNavProps) {
     <div className="side_nav" style={{ width: `${openSideNav ? "60%" : "0"}` }}>
       <ul>
         <li onClick={() => setOpenSideNav(!openSideNav)}>
-          <a href="/hair">HAIR</a>
+          <Link to="/hair">HAIR</Link>
         </li>
         <li onClick={() => setOpenSideNav(!openSideNav)}>
-          <a href="/fabrics">FABRICS</a>
+          <Link to="/fabrics">FABRICS</Link>
         </li>
         <li onClick={() => setOpenSideNav(!openSideNav)}>
-          <a href="/collections">FEATURED</a>
+          <Link to="/">FEATURED</Link>
         </li>
         <li onClick={() => setOpenSideNav(!openSideNav)}>
-          <a href="/signup">ACCOUNT</a>
+          <Link to="/signin">ACCOUNT</Link>
         </li>
         <li onClick={() => setOpenSideNav(!openSideNav)}>
-          <a href="/soon">ABOUT US</a>
+          <Link to="/">ABOUT US</Link>
         </li>
         <li onClick={() => setOpenSideNav(!openSideNav)}>
-          <a href="/soon">CONTACT US</a>
+          <Link to="/">CONTACT US</Link>
         </li>
         <li onClick={() => setOpenSideNav(!openSideNav)}>
-          <a href="/soon">BOOK A SESSION</a>
+          <Link to="/">BOOK A SESSION</Link>
         </li>
       </ul>
       {openSideNav && (
