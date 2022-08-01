@@ -51,7 +51,7 @@ export const hairCategory: Category[] = [
   },
   {
     id: 2,
-    name: "Straight Hair",
+    name: "Braided Hair",
     image: "images/braid3.png",
   },
   {

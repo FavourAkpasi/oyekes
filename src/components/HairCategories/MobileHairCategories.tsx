@@ -23,11 +23,10 @@ const MobileHairCategories = () => {
           </div>
         ))}
       </div>
-      <div className="not-sure">
+      <div className="not-sure mobile">
         <h2>Not sure what you are looking for?</h2>
         <Button
           color="inherit"
-          size="large"
           variant="contained"
           // onClick={() => navigate(`/${allProductsRoute}`)}
         >
