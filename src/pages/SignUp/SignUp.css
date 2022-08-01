@@ -1,4 +1,4 @@
-.sign-up {
+.auth-container .sign-up {
   color: #222;
   border-bottom: 0.15rem solid hotpink;
 }
@@ -11,4 +11,8 @@
 .terms-conditions {
   font-size: 0.8rem;
   color: #888;
+}
+
+.terms {
+  color: #222;
 }
