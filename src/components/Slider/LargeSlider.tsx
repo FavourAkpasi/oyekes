@@ -1,7 +1,7 @@
 import { ArrowLeftOutlined, ArrowRightOutlined } from "@mui/icons-material";
 import styled, { StyledComponent } from "styled-components";
 import { useNavigate } from "react-router-dom";
-// import { sliderData } from "../../Data.js";
+import { sliderData } from "../../Data.js";
 import { useEffect, useState } from "react";
 import React from "react";
 import "./Slider.css";
@@ -10,37 +10,6 @@ interface PropType {
   side: string;
   slideIndex: number;
 }
-
-const sliderData = [
-  {
-    id: 1,
-    img: "images/hair1.jpg",
-    desc: "ELEGANT HAIR, FEEL CONFIDENT",
-    link: "/hair",
-    btn: "SHOP OYEKES HAIR",
-  },
-  {
-    id: 2,
-    img: "images/fabrics1.jpeg",
-    desc: "QUALITY FABRICS, COZY TEXTURES",
-    link: "/fabrics",
-    btn: "SHOP OYEKES FABRICS",
-  },
-  {
-    id: 3,
-    img: "images/hairb4.jpg",
-    desc: "ELEGANT HAIR, FEEL CONFIDENT",
-    link: "/hair",
-    btn: "SHOP OYEKES HAIR",
-  },
-  {
-    id: 4,
-    img: "images/fabricsb.jpg",
-    desc: "QUALITY FABRICS, COZY TEXTURES",
-    link: "/fabrics",
-    btn: "SHOP OYEKES FABRICS",
-  },
-];
 
 const Container = styled.div`
   width: 100%;

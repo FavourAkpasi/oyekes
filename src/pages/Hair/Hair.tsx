@@ -6,7 +6,6 @@ import HairCategories from "../../components/HairCategories/HairCategories";
 import Header from "../../components/Header/Header";
 import Navbar from "../../components/Navbar/Navbar";
 import Servicebar from "../../components/Servicebar/Servicebar";
-import Slider from "../../components/Slider/Slider";
 import Socials from "../../components/Socials/Socials";
 
 const Hair = () => {
@@ -16,7 +15,6 @@ const Hair = () => {
       <Navbar />
       <BottomNav />
       <Announcement />
-      <Slider />
       <HairCategories />
       <Servicebar />
       <Socials />

@@ -69,7 +69,7 @@ const SignUp = () => {
             />
             <br />
             <span className="terms-conditions">
-              By Clicking on the button below, you agree to{" "}
+              By Clicking on the button below, you agree to
               <span className="terms" onClick={() => navigate("/Terms")}>
                 Oyekes Terms & Conditions
               </span>
