@@ -1,6 +1,6 @@
 import { Button } from "@mui/material";
 import React from "react";
-import { hairCategory } from "../../Data";
+import { hairCategory } from "../../Data.js";
 
 const LargeHairCartegories = () => {
   return (
