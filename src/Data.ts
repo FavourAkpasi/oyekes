@@ -1,9 +1,9 @@
 type SliderData = {
-  id: Number;
-  img: String;
-  desc: String;
-  link: String;
-  btn: String;
+  id: number;
+  img: string;
+  desc: string;
+  link: string;
+  btn: string;
 };
 
 export const sliderData: SliderData[] = [
@@ -38,9 +38,9 @@ export const sliderData: SliderData[] = [
 ];
 
 type Category = {
-  id: Number;
-  name: String;
-  image: String;
+  id: number;
+  name: string;
+  image: string;
 };
 
 export const hairCategory: Category[] = [
