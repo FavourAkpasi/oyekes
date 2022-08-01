@@ -11,8 +11,11 @@ const MobileHeader = () => {
     var prevScrollpos = window.pageYOffset;
     window.onscroll = function () {
       var currentScrollPos = window.pageYOffset;
+
       if (header != null) {
-        if (prevScrollpos > currentScrollPos || 0) {
+        if (prevScrollpos > currentScrollPos) {
+          header.style.top = "0";
+        } else if (currentScrollPos == 0) {
           header.style.top = "0";
         } else {
           header.style.top = "-5rem";
