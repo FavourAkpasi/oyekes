@@ -1,5 +1,6 @@
 import { Button } from "@mui/material";
 import React from "react";
+import { Link } from "react-router-dom";
 import { hairCategory } from "../../Data.js";
 
 const MobileHairCategories = () => {
@@ -25,14 +26,16 @@ const MobileHairCategories = () => {
             <img src={item.image} alt={item.name} />
             <div className="info">
               <h3>{item.name}</h3>
-              <Button
-                sx={{ padding: "1rem", fontWeight: "bold", color: "#fff" }}
-                color="inherit"
-                size="large"
-                variant="outlined"
-              >
-                SHOP NOW
-              </Button>
+              <Link to={item.name.replace(/\s/g, "").toLowerCase()}>
+                <Button
+                  sx={{ padding: "1rem", fontWeight: "bold", color: "#fff" }}
+                  color="inherit"
+                  size="large"
+                  variant="outlined"
+                >
+                  SHOP NOW
+                </Button>
+              </Link>
             </div>
           </div>
         ))}

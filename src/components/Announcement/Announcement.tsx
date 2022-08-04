@@ -5,7 +5,7 @@ function Announcement() {
     <section className="navbar2-container">
       <div className="navbar2-item">
         <div className="navbar2-item-pic">
-          <img src="images/delivery.gif" width="100%" alt="delivery" />
+          <img src="/images/delivery.gif" width="100%" alt="delivery" />
         </div>
         <div className="navbar2-item-text">
           <div>
@@ -16,7 +16,7 @@ function Announcement() {
       </div>
       <div className="navbar2-item hide">
         <div className="navbar2-item-pic">
-          <img src="images/card.gif" width="100%" alt="card" />
+          <img src="/images/card.gif" width="100%" alt="card" />
         </div>
         <div className="navbar2-item-text">
           <div>
@@ -27,7 +27,7 @@ function Announcement() {
       </div>
       <div className="navbar2-item hide">
         <div className="navbar2-item-pic">
-          <img src="images/verified.gif" width="100%" alt="verified" />
+          <img src="/images/verified.gif" width="100%" alt="verified" />
         </div>
         <div className="navbar2-item-text">
           <div>
