@@ -1,6 +1,6 @@
 .products-container {
   display: flex;
-  padding: 1rem;
+  padding: 0.5rem;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -19,8 +19,9 @@
   transform: scale(105%);
 }
 .product-card {
-  width: 20vw;
-  height: 45vh;
+  width: 250px;
+  height: 250px;
+  margin: auto;
 }
 .product-card img {
   width: 100%;
@@ -35,7 +36,7 @@
   box-shadow: none;
 }
 .product-desc {
-  width: 20vw;
+  width: 80%;
   padding: 1rem;
   margin: auto;
   font-size: large;

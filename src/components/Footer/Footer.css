@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   text-align: start;
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
 }
 .footer-left {
   padding: 2rem;
@@ -43,12 +43,13 @@
   margin-right: 0.1rem;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 780px) {
   .footer-container {
     padding: 0.5rem;
     flex-direction: column;
     font-size: smaller;
     margin-bottom: 2rem;
+    align-items: flex-start;
   }
   .footer-item {
     padding: 0.5rem 0;

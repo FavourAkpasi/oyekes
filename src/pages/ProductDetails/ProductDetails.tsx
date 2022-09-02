@@ -36,25 +36,13 @@ const FilterSizeOption = styled.option`
   padding: 0.5rem;
 `;
 
-type Product = {
-  id: string;
-  name: string;
-  image: string;
-  desc: string;
-  price: string;
-  class: string;
-  category: string;
-};
-
 const ProductDetails = () => {
   const navigate = useNavigate();
   const { productId } = useParams();
 
   //   const productId = params.productId;
 
-  const product: Product | undefined = superMegaArray.find(
-    (item) => item.id === productId
-  );
+  const product = superMegaArray.find((item) => item.id === productId);
 
   return (
     <>
